@@ -6,7 +6,7 @@ import blogBiriMeImage from './images/blog.biri.me.png';
 import scpFsecUcfEduImage from './images/scp.fsec.ucf.edu.png';
 import secureSolarRatingImage from './images/secure.solar-rating.org.png';
 import fcardsImage from './images/fcards.biri.me.png';
-import biriMeImage from './images/biir.me.png';
+import biriMeImage from './images/biri.me.png';
 import hiraganaHunterImage from './images/hiraganahunter.png';
 import systemAdminImage from './images/sysadminDefault.png';
 import tapeBackupImage from './images/tapebackup.jpg';
