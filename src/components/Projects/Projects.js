@@ -6,10 +6,29 @@ import blogBiriMeImage from './images/blog.biri.me.png';
 import scpFsecUcfEduImage from './images/scp.fsec.ucf.edu.png';
 import secureSolarRatingImage from './images/secure.solar-rating.org.png';
 import fcardsImage from './images/fcards.biri.me.png';
-import biriMeImage from './images/biri.me.png';
+import biriMeImage from './images/biir.me.png';
 import hiraganaHunterImage from './images/hiraganahunter.png';
-import { Modal,Button} from 'react-bootstrap';
+import systemAdminImage from './images/sysadminDefault.png';
+import tapeBackupImage from './images/tapebackup.jpg';
+import openVMSImage from './images/openvms.png';
+import sambaCIFSImage from './images/sambacifs.png';
+import desktopSupportImage from './images/desktopSupport.png';
+import binddnsImage from './images/binddns.png';
+import eghersImage from './images/eghersLogo.png';
+import processSoftwareImage from './images/processSoftware.png';
+import vmwareImage from './images/vmware.png';
+import svnImage from './images/svn.jpg';
+import dataScienceImage from './images/dataScience.png';
+import nessusImage from './images/nessus.png';
+import nakivoImage from './images/nakivo.png';
+import tomcatImage from './images/tomcat.png';
+import siemensPSEImage from './images/siemensProcessSystemsEngineering.png';
+import osipisoftImage from './images/osipisoft.png';
+import dnsblImage from './images/dnsbl.png';
+import analyticsImage from './images/analytics.png';
 
+import { Modal,Button} from 'react-bootstrap';
+import Project from './Project';
 
 class Projects extends Component {
 	constructor(props, context) {
@@ -32,6 +51,317 @@ class Projects extends Component {
 	}
 
 	render() {
+		//{title,image,description,tags,url}
+		const onGoingThisYear = new Date().getFullYear();
+		const projectsList = [];
+		projectsList.push(
+				{"startYear":"2018",
+				"endYear":"2021",
+				"title":"Biri.me (This)",
+				"image":biriMeImage,
+				"description":"Personal Webpage re-written in ReactJS",
+				"url":"https://www.biri.me",
+				"tags":["ReactJS", "NodeJS", "JavaScript"],
+				"bulletPoints":[]
+			});
+			
+
+			projectsList.push(
+				{"startYear":"2015",
+				"endYear":"2021",
+				"title":"Biri.me Blog",
+				"image":blogBiriMeImage,
+				"description":"Personal blog for storing notes related to IT, Japanese studies, etc.",
+				"url":"https://blog.biri.me",
+				"tags":["PHP","Apache","MySQL","WordPress"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"OpenVMS Systems Administration",
+				"image":openVMSImage,
+				"description":"Performing System Administration for OpenVMS Itanium cluster.",
+				"url":"https://www.vmssoftware.com",
+				"tags":["OpenVMS", "VSI", "VMS"],
+				"bulletPoints":[]
+			});
+
+			
+			
+
+
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"Tape Backup/Restore",
+				"image":tapeBackupImage,
+				"description":"Performing Tape Backups, Restores and Routine Testing of Backups",
+				"url":null,
+				"tags":["Backups", "Restores", "Tape"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"E-mail Server Admin.",
+				"image":processSoftwareImage,
+				"description":"PMDF & PMAS E-Mail Server Administration. Including updates, maint, backups, etc.",
+				"url":"https://www.process.com",
+				"tags":["PMDF", "PMAS", "E-Mail"],
+				"bulletPoints":[]
+			});
+			
+
+			projectsList.push(
+				{"startYear":"2010",
+				"endYear":onGoingThisYear,
+				"title":"Nessus Vuln. Scans",
+				"image":nessusImage,
+				"description":"Performing and Resolving Tenable Nessus scans on our various servers on a regular basis.",
+				"url":null,
+				"tags":["Tenable", "Nessus", "Security"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"BIND DNS Administration",
+				"image":binddnsImage,
+				"description":"Performing Administration of our BIND DNS Redundant Servers and Domains",
+				"url":"https://www.isc.org/bind/",
+				"tags":["BIND", "DNS", "Domains"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2016",
+				"endYear":onGoingThisYear,
+				"title":"VMWare vCenter Admin",
+				"image":vmwareImage,
+				"description":"vCenter Administrator for our ESXi blades, VMs, upgrades, backups, maint. etc",
+				"url":"https://www.vmware.com/",
+				"tags":["VMWare", "vCenter", "ESXi","VDP"],
+				"bulletPoints":[]
+			});
+
+			
+			projectsList.push(
+				{"startYear":"2020",
+				"endYear":onGoingThisYear,
+				"title":"Nakivo VM Backups",
+				"image":nakivoImage,
+				"description":"Managing Nakivo Software and VM Backups",
+				"url":null,
+				"tags":["Nakivo", "VM", "Data Recovery"],
+				"bulletPoints":[]
+			});
+
+			
+			projectsList.push(
+				{"startYear":"2021",
+				"endYear":onGoingThisYear,
+				"title":"OSI Pi Soft",
+				"image":osipisoftImage,
+				"description":"Administrating Pi Servers, Pi Data, Collecting, Parsing, Transforming data, etc.",
+				"url":null,
+				"tags":["DataLoggers", "Data Science", "OSI Pi Soft"],
+				"bulletPoints":["Pi Data Archive",
+							"Pi Asset Framework",
+							"Pi Vision"
+				]
+			});
+
+			projectsList.push(
+				{"startYear":"2021",
+				"endYear":onGoingThisYear,
+				"title":"Siemens Process Systems Engineering",
+				"image":siemensPSEImage,
+				"description":"Managing Siemens PSE Servers/Devices",
+				"url":null,
+				"tags":["Siemens", "PSE", "Process Systems Engineering"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"Samba/CIFS Administration",
+				"image":sambaCIFSImage,
+				"description":"Performing Samba (v3)/CIFS (v1) administration, upgrades and hosting on OpenVMS, Linux, etc.",
+				"url":"https://www.samba.org",
+				"tags":["Samba", "CIFS", "Samba", "Shares", "Storage"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":onGoingThisYear,
+				"title":"Apache Tomcat",
+				"image":tomcatImage,
+				"description":"Managing Apache Tomcat Server and Tomcat Applications",
+				"url":null,
+				"tags":["Tomcat", "Apache", "Java"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2021",
+				"endYear":onGoingThisYear,
+				"title":"Domain Name System BlockLists",
+				"image":dnsblImage,
+				"description":"Managing DNS BlockLists to significantly reduce spam.",
+				"url":null,
+				"tags":["PMDF", "PMAS", "DNSBL","DNS","Spam","E-mail"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2020",
+				"endYear":onGoingThisYear,
+				"title":"Apache Subversion Administration",
+				"image":svnImage,
+				"description":"Migrated from Oracle RedHat Linux server to Ubuntu, perform updates and maintance to SVN server.",
+				"url":"https://subversion.apache.org/",
+				"tags":["Apache", "Subversion", "SVN"],
+				"bulletPoints":[]
+			});
+			
+
+			
+
+			
+
+			projectsList.push(
+				{"startYear":"2019",
+				"endYear":"2020",
+				"title":"Flash Cards",
+				"image":fcardsImage,
+				"description":"Personal ReactJS Flash Cards project that has a RESTful backend.",
+				"url":"https://fcards.biri.me",
+				"tags":["REST", "ReactJS", "API", "NodeJS"],
+				"bulletPoints":[]
+			});
+			projectsList.push(
+				{"startYear":"2018",
+				"endYear":"2018",
+				"title":"AI Facial Recognition",
+				"image":gitHubAiFacialRecImage,
+				"description":"Personal ReactJS project that uses an AI API to detect faces in images via URL.",
+				"url":"https://wmollenkopf.github.io/ai-facial-recognition",
+				"tags":["AI", "ReactJS"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2017",
+				"endYear":"2018",
+				"title":"EnspectorPro",
+				"image":enspectorproImage,
+				"description":"EnspectorPro, helping building testers work more easily with building officials.",
+				"url":"https://enspectorpro.com",
+				"tags":["Configuration", "Guides", "Documentation", "Notes"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2017",
+				"endYear":"2017",
+				"title":"Photovoltaic Certification Portal",
+				"image":scpFsecUcfEduImage,
+				"description":"SCP, A website dedicated to certifying solar panels. Uses a combination of .NET and nodeJS servers and an Oracle Database to produce results.",
+				"url":"https://scp.fsec.ucf.edu",
+				"tags":["Serverside Development", "VB.net", "nodeJS", "Oracle"],
+				"bulletPoints":[]
+			});
+
+			
+
+			// projectsList.push(
+			// 	{"startYear":"2016",
+			// 	"endYear":"2016",
+			// 	"title":"Hiragana Hunter",
+			// 	"image":hiraganaHunterImage,
+			// 	"description":"A final game Project for UCF Game AI course.",
+			// 	"url":"https://www.biri.me/hh",
+			// 	"tags":["Unity3D", "C#", "AI"],
+			// 	"bulletPoints":[]
+			// });
+
+			projectsList.push(
+				{"startYear":"2015",
+				"endYear":"2019",
+				"title":"Home Energy Rating Service Development",
+				"image":eghersImage,
+				"description":"Wrote PL/SQL and modPLSQL code to perform various updates to the site.",
+				"url":"http://fsec.ucf.edu/dbase/herspro/help-Overview.html",
+				"tags":["Oracle","PL/SQL", "HERS", "ENGAUGE", "EnergyGauge"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2008",
+				"endYear":"2014",
+				"title":"Solar Rating & Certfication Corp.",
+				"image":secureSolarRatingImage,
+				"description":"Site used for certifying PV Modules & Systems throughout the US.",
+				"url":"https://secure.solar-rating.org",
+				"tags":["Serverside Development", "VB.net"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2021",
+				"endYear":onGoingThisYear,
+				"title":"OpenVMS T4 System Analytics Collection",
+				"image":analyticsImage,
+				"description":"Performing Collection of OpenVMS System Performance Data in order to monitor and inspect unexpected behavior.",
+				"url":null,
+				"tags":["OpenVMS", "T4", "VSI", "HPE"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2008",
+				"endYear":onGoingThisYear,
+				"title":"Computer IT Support",
+				"image":desktopSupportImage,
+				"description":"Performing Basic Desktop IT Support for Staff",
+				"url":null,
+				"tags":["Desktop", "Windows", "PC", "Laptop", "Apple"],
+				"bulletPoints":[]
+			});
+
+			projectsList.push(
+				{"startYear":"2008",
+				"endYear":onGoingThisYear,
+				"title":"Data Logger (Data Sci.)",
+				"image":dataScienceImage,
+				"description":"Collecting, Parsing, Transforming data from:",
+				"url":null,
+				"tags":["DataLoggers", "Data Science"],
+				"bulletPoints":["Campbell Scientific",
+							"La Crosse Technology",
+							"Watts Up",
+							"eMonitor (now siteSage)",
+							"TED – The Energy Detective",
+							"Weather Underground",
+							"Point Six Wireless",
+							"Also Energy",
+							"AcuRite & Acu-Link"
+				]
+			});
+
+			
+
+			
+
+			
+
 
 		const detailedProjectsList = [];
 		detailedProjectsList.push({"year":"2008","titleName":"E-Mail Archiving Software","bulletPoints":[]});
@@ -41,7 +371,7 @@ class Projects extends Component {
 	return (
 		<div className={this.props.backgroundClass}>
 			<div id="cv" className="cvContainer"></div>
-			<div id="projects" className="projectsContainer container">
+			<div id="projects" className="projectsContainer ">
 				<h2>Projects</h2>
 				<blockquote className="blockquote lead">
 					<p className="mb-0">&ldquo;You can do anything you set your mind to.&rdquo;</p>
@@ -51,126 +381,15 @@ class Projects extends Component {
 				<hr />
 
 				<div className="row">
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={biriMeImage} alt="Biri.me" />
-							<figcaption>
-								<h3>Biri.me (This)</h3>
-								<p>Personal Webpage re-written in ReactJS</p>
-								<p><strong>Tags:</strong> <br /> ReactJS, NodeJS, JavaScript</p>
-								<a href="https://www.biri.me" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
+					{
+                        projectsList.map((item,index) => (
+						<Project key={index} 
+									props={item}
+									 />
+                        ))
+                    }	
 
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={blogBiriMeImage} alt="Biri.me Blog" />
-							<figcaption>
-								<h3>Biri.me Blog</h3>
-								<p>Personal blog for storing notes related to IT, Japanese studies, etc.</p>
-								<p><strong>Tags:</strong> <br />Configuration, Guides, Documentation, Notes</p>
-								<a href="https://blog.biri.me" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={enspectorproImage} alt="EnspectorPro" />
-							<figcaption>
-								<h3>EnspectorPro</h3>
-								<p>EnspectorPro, helping building testers work more easily with building officials.</p>
-								<p><strong>Tags:</strong> <br />Design, Development, PHP, Bootstrap, Fullstack</p>
-								<a href="https://enspectorpro.com" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={scpFsecUcfEduImage} alt="FSEC Solar Photovoltaic Portal" />
-							<figcaption>
-								<h3>Photovoltaic Certification Portal</h3>
-								<p>SCP, certifying solar panels in Florida, USA.</p>
-								<p><strong>Tags:</strong> <br />Serverside Development, VB.net</p>
-								<a href="https://scp.fsec.ucf.edu" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={secureSolarRatingImage} alt="FSEC Solar Photovoltaic Portal" />
-							<figcaption>
-								<h3>Solar Rating & Certfication Corp.</h3>
-								<p>Site used for certifying PV Modules & Systems throughout the US.</p>
-								<p><strong>Tags:</strong> <br />Serverside Development, VB.net</p>
-								<a href="https://secure.solar-rating.org" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={fcardsImage} alt="AI Facial Recognition" />
-							<figcaption>
-								<h3>Flash Cards</h3>
-								<p>Personal ReactJS Flash Cards project that has a RESTful backend.</p>
-								<p><strong>Tags:</strong> <br /> REST, ReactJS, API, NodeJS</p>
-								<a href="https://fcards.biri.me" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={gitHubAiFacialRecImage} alt="AI Facial Recognition" />
-							<figcaption>
-								<h3>AI Facial Recognition</h3>
-								<p>Personal ReactJS project that uses an AI API to detect faces in images via URL.</p>
-								<p><strong>Tags:</strong> <br /> AI, ReactJS</p>
-								<a href="https://wmollenkopf.github.io/ai-facial-recognition" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div className="col-md-6 col-sm-12 col-xs-12">
-						<figure className="effect">
-							<img src={hiraganaHunterImage} alt="Hiragana Hunter" />
-							<figcaption>
-								<h3>Hiragana Hunter</h3>
-								<p>A final game Project for UCF Game AI course.</p>
-								<p><strong>Tags:</strong> <br /> Unity3D, C#, AI</p>
-								<a href="https://www.biri.me/hh" target="_blank" rel="noopener noreferrer">View more</a>
-								<span className="icon">
-									<span className="glyphicon glyphicon-new-window"></span>
-								</span>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
+				</div>		
 				<div className="row">
 					<div className="col-md-12">
 						<hr />
@@ -512,12 +731,68 @@ class Projects extends Component {
 							<li><span className="projYear">2019:</span> Installing and Configuring vCenter 6.7u2</li>
 							<li><span className="projYear">2019:</span> Assisting with Smart Deploy configuration, set up, and deployment</li>
 							<li><span className="projYear">2019:</span> Setting up and managing Single Sign On for vCenter</li>
+							
 							<li><span className="projYear">2019:</span> Setting up and troubleshooting a network of various routers, switches, wireless bridges, etc for the purpose of data collection at a remote	site</li>
 							<li><span className="projYear">2019:</span> Managing Adobe Cloud Creative Cloud products, users, etc</li>
 							<li><span className="projYear">2019:</span> Installing a fallback HPe OnBoard Administrator</li>
 							<li><span className="projYear">2019:</span> Updating firmware for OnBoard Administrators</li>
 							<li><span className="projYear">2019:</span> Updating HPe Virtual Connect</li>
+							<li><span className="projYear">2019:</span> Updating HPe Virtual Connect</li>
+							<li><span className="projYear">2018-2019:</span> Migrating Windows 7 PCs to Windows 10 PCs</li>
+							<li><span className="projYear">2018-2020:</span> Managing VDP Backups</li>
+							<li><span className="projYear">2020:</span> Set up Nakivo Backup Software</li>
+							<li><span className="projYear">2020:</span> Upgraded HPE OpenVMS to VSI OpenVMS</li>
+							<li><span className="projYear">2020:</span> Upgrading Servers to TLS 1.2+</li>
+							<li><span className="projYear">2020:</span> Setting up New ESXi Blade Servers</li>
+							<li><span className="projYear">2021:</span> OpenVMS Cluster Upgraded To Latest Version 8.4.2LU3</li>
+							<li><span className="projYear">2021:</span> Oracle 11g installed On OpenVMS successfully</li>
+							<li><span className="projYear">2021:</span> Upgraded OpenVMS Samba CIFS v1 to OpenVMS Samba v4</li>
+							<li><span className="projYear">2021:</span> Tape Restore Documentation And Experience
+								<ul className="hidden-phone">
+									<li>Restored Disk Image</li>
+									<li>Restored Individual Files</li>
+									<li>Documented procedures for Restoring as well as how we manage our backups to tape.</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2021:</span> Process Systems Engineering Servers Installed and Configured</li>
+							<li><span className="projYear">2021:</span> Expanded ShadowSet Userdisk Storage with minimal downtime</li>
+							<li><span className="projYear">2021:</span> Resolved Energy OpenVMS Death with minimal downtime</li>
+							<li><span className="projYear">2021:</span> Audit Documentation Compiled and Submitted Twice</li>
+							<li><span className="projYear">2021:</span> Tomcat Server and FSEC Store Installed and Migrated to a Windows Server</li>
+							<li><span className="projYear">2021:</span> Oracle Shadow Disk Expansion with minimal downtime</li>
+							<li><span className="projYear">2021:</span> OpenVMS Defragmentation Software Installed
+								<ul className="hidden-phone">
+									<li>OpenVMS Disks Defragmented for the first time ever!</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2021:</span> T4 OpenVMS Comprehensive Systems Monitoring Software Completely Installed and Running</li>
+							<li><span className="projYear">2021:</span> Researched and found DNSBL (DNS Block List) Solution to fight intruders.
+								<ul className="hidden-phone">
+									<li>Installed and Configured DNSBL to help fight off spam and DDoS intruders</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2021:</span> Fought off Intruders literally day and night interactively.
+								<ul className="hidden-phone">
+									<li>Took proactive measures to significantly reduce and prevent intrusions and bring back stability to our systems. One such measure is the aforementioned DNSBL.</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2021:</span> Drastically increased performance of our E-Mail Storage Drive
+								<ul className="hidden-phone">
+									<li>Archived millions of e-mail files off of our userdisk drive, from previous employees with no need to such e-mails.</li>
+									<li>By reducing Userdisk E-Mail Files and Defragmenting of the disk, was able to reduce weekly tape backup by over 12 Hours! (+30% improvement!)</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2021:</span> Created the Don't Panic Emergency Documentation
+								<ul className="hidden-phone">
+									<li>Documentation has immediate lookup details for how to bring back our systems in the most critical of downtime scenarios from nothing.</li>
+								</ul>
+							</li>
+						</ul>
 
+						<h4 style={{textAlign:"center",marginTop:"15px"}}>Ongoing Projects</h4>
+						<hr style={{textAlign:"center",margin:"15px"}} />
+						
+						<ul>
 							<li><span className="projYear">2018-Present:</span> System Administration: Documentation
 								<ul className="hidden-phone">
 									<li>Documenting the batch jobs that run on a regular basis.</li>
@@ -533,11 +808,11 @@ class Projects extends Component {
 							<li><span className="projYear">2018-Present:</span> Resolving TLS issues for servers</li>
 							<li><span className="projYear">2018-Present:</span> Managing DNS Entries</li>
 							<li><span className="projYear">2018-Present:</span> Installing and Managing ESXi Host Blade Servers</li>
-							<li><span className="projYear">2018-Present:</span> Managing VDP Backups</li>
+							<li><span className="projYear">2018-2020:</span> Managing Nakivo Backups</li>							
 							<li><span className="projYear">2018-Present:</span> Updating ESXi Hypervisor servers with firmware, drivers and patches</li>
-							<li><span className="projYear">2018-Present:</span> Migrating Windows 7 PCs to Windows 10 PCs</li>
 							<li><span className="projYear">2018-Present:</span> Managing system batch job queues on OpenVMS Cluster</li>
 							<li><span className="projYear">2018-Present:</span> Performing OpenVMS username changes affecting services such as e-mail, shares, website logins, etc.</li>
+							<li><span className="projYear">2018-Present:</span> Performing Tape Restores and Tape Restore Testing</li>
 							<li><span className="projYear">2010-Present:</span> Resolving Nessus SIRT Responses Each Month
 								<ul className="hidden-phone">
 									<li>Go through a report each month to resolve any lingering security issues we may have with our network or servers.</li>
