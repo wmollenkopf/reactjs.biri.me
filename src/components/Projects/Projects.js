@@ -787,6 +787,26 @@ class Projects extends Component {
 									<li>Documentation has immediate lookup details for how to bring back our systems in the most critical of downtime scenarios from nothing.</li>
 								</ul>
 							</li>
+							<li><span className="projYear">2022:</span> Drastically Improved Tape Backups
+								<ul className="hidden-phone">
+									<li>Implemented Ability for Encrypted Tape Backups</li>
+									<li>Implemented a Critical Tape Backup</li>
+									<li>Implemented Modular Design In Use for Critical Tape Backups</li>
+									<li>Improved Tape Verification Methods</li>
+									<li>Drastically Improved Methods for Recording Tape Success and Location Details</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2022:</span> Setup Complex System of OSI Soft Pi Servers
+								<ul className="hidden-phone">
+									<li>Involves 4 servers, each with tightly integrated complex configuration tied</li>
+									<li>Tied in multiple ways into our AD Server</li>
+								</ul>
+							</li>
+							<li><span className="projYear">2022:</span> Configured Nakivo VM Backups to AWS S3 Cloud Storage
+								<ul className="hidden-phone">
+									<li>Was also able to restore a VM from AWS Cloud as well</li>
+								</ul>
+							</li>
 						</ul>
 
 						<h4 style={{textAlign:"center",marginTop:"15px"}}>Ongoing Projects</h4>
