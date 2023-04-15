@@ -8,7 +8,7 @@ const Abilities = ({backgroundClass}) => {
 	const operatingSystems = {"column1":["Windows","Windows Server","Mac"],"column2":["Ubuntu","Arch Linux","Red Hat"],"column3":["OpenVMS","ESXi"]}
 	const programmingScripting = {"column1":["PHP","NodeJS","HTML","JavaScript","Oracle PL/SQL","JSON"],"column2":["ASP.NET","XML","JSX","jQuery","Visual Basic.NET","CSS"],"column3":["Java","Visual Basic 6","Fortran 70/90/95","C/C++","Python","Ruby"]}
 	const databases = {"column1":["Oracle","MySQL",],"column2":["PostgreSQL","SQL Server"],"column3":["MongoDB","Parse API"]}
-	const skills = {"column1":["Bootstrap","ReactJS","UML & Case Diagrams"],"column2":["WordPress", "SASS/SCSS","Command Line Interface"],"column3":["MVC Pattern","Object Oriented Programming"]}
+	const skills = {"column1":["Bootstrap","ReactJS","UML & Case Diagrams","Numpy"],"column2":["WordPress", "SASS/SCSS","Command Line Interface","Pandas"],"column3":["MVC Pattern","Object Oriented Programming","Jupyter Notebook", "TensorFlow/Keras"]}
 	const tools = {"column1":["Visual Studio Code","Sublime Text 3","Visual Studio", "Unity3D","MonoDevelop","Notepad++","Delphi/RAD Studio"],"column2":["Putty","MobaXTerm","Git","Subversion","SQL Developer","Adobe Photoshop","Paint.NET"],"column3":["Firefox","Webkit Browsers","TOAD Data Moddler","TOAD for Oracle","RTMC Pro","Campbell Loggernet","Microsoft Office"]}
 
 	return (
