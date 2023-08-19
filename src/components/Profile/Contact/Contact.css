@@ -1,0 +1,13 @@
+.contactLinks a {
+	color: rgb(71, 154, 221);
+	opacity: 0.6; filter:alpha(opacity=60);
+    font-size: 2.5em;
+	line-height: 32px;
+    padding: 5px;
+    background: none;
+    border: none;
+}
+
+.contactLinks a:hover {
+	filter: brightness(1.2); /* Adjust the brightness to create a highlight effect */
+}
