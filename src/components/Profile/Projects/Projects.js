@@ -4,7 +4,6 @@ import enspectorproImage from './images/enspectorpro.com.png';
 import blogBiriMeImage from './images/blog.biri.me.png';
 import scpFsecUcfEduImage from './images/scp.fsec.ucf.edu.png';
 import comingSoonImage from './images/coming-soon.jpg';
-import { Modal,Button} from 'react-bootstrap';
 import './Projects.css';
 
 const Projects = () => {
@@ -26,7 +25,7 @@ const Projects = () => {
 				<a className="site-url" href={"https://www.enspectorpro.com"} target="_blank" rel="noopener noreferrer">
 					<img className="site-image" src={enspectorproImage} alt={"EnspectorPro"} />
 				</a>
-				<a className="site-url" href={"https://blog.biri.me"} target="_blank" rel="noopener noreferrer">
+				<a className="site-url" href={"https://scp.fsec.ucf.edu"} target="_blank" rel="noopener noreferrer">
 					<img className="site-image" src={scpFsecUcfEduImage} alt={"Solar Certification Portal"} />
 				</a>
 			</div>
