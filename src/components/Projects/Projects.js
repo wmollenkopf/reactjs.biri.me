@@ -377,7 +377,9 @@ class Projects extends Component {
 					<p className="mb-0">&ldquo;You can do anything you set your mind to.&rdquo;</p>
 					<footer className="blockquote-footer ">Benjamin Franklin</footer>
 				</blockquote>
-
+				<div className="text-center project-referal">
+					<a href="https://github.com/wmollenkopf/reactjs.biri.me" className="btn btn-primary" target="_blank" rel="noopener noreferrer">See this project on Github</a>
+				</div>
 				<hr />
 
 				<div className="row">

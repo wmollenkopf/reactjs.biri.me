@@ -46,9 +46,9 @@ class App extends Component {
         {/* <Navibar/> */}
         <Profile backgroundClass="background-snowwhite" />
         {/* <Experiences backgroundClass="background-snowblue" /> */}
-        <Abilities backgroundClass="background-snowblue" />
-        <Projects backgroundClass="background-snowwhite" />
-        <Contact backgroundClass="background-gray" />
+        {/* <Abilities backgroundClass="background-snowblue" /> */}
+        {/* <Projects backgroundClass="background-snowblue" /> */}
+        {/* <Contact backgroundClass="background-gray" /> */}
       </div>
     );
   }
